@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Pagina</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header-top">
+      <img src="img/img1.png" height="80" alt="nono">
+      <h1 class="header-logo"></h1>
+      <button class="header-btn">=</button>
+    </div>
+    <nav  class="header-menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Productos.html">Productos</a></li>
+        <li><a href="nosotros.html">Sobre Nosotros</a></li>
+        <li><a href="preguntas.html">Preguntas</a></li>
+        
+          </ul>
+        </nav>
+      </header>
+
+      
+    
+      <script>
+        const header_btn = document.querySelector('.header-btn')
+        const header_menu = document.querySelector('.header-menu')
+        header_btn.addEventListener('click', () => {
+          if (header_menu.style.display != 'block') {
+            header_menu.style.display = 'block'
+            header_btn.innerHTML = 'X'
+          } else {
+            header_menu.style.display = 'none'
+            header_btn.innerHTML = '='
+          }
+        })
+      </script>
+      
+<div class="grid">
+  <div class="grid-item">
+    <div class="card">
+      <img class="card-img" src="./img/rome.jpg" alt="Rome" />
+      <div class="card-content">
+        <h1 class="card-header">Rome</h1>
+        <p class="card-text">
+          Rome is known for its stunning <strong> architecture</strong>,
+          with the Colleseum, Pantheon, and Trevi Fountain as the main
+          attractions.
+        </p>
+        <button class="card-btn">Visit <span>&rarr;</span></button>
+      </div>
+    </div>
+  </div>
+  <div class="grid-item">
+    <div class="card">
+      <img
+        class="card-img"
+        src="./img/grand-canyon.jpg"
+        alt="Grand Canyon"
+      />
+      <div class="card-content">
+        <h1 class="card-header">Grand Canyon</h1>
+        <p class="card-text">
+          One of the world's natural wonders, the iconic Grand Canyon draws
+          oohs and aahs from visitors perched at the edge of its
+          <strong>towering cliffs</strong>.
+        </p>
+        <button class="card-btn">Visit <span>&rarr;</span></button>
+      </div>
+    </div>
+  </div>
+  <div class="grid-item">
+    <div class="card">
+      <img class="card-img" src="./img/maldives.jpg" alt="Maldives" />
+      <div class="card-content">
+        <h1 class="card-header">Maldives</h1>
+        <p class="card-text">
+          The Maldives are known for their
+          <strong>natural environment</strong> including the blue ocean,
+          white beaches, and clean air, attracting tourists.
+        </p>
+        <button class="card-btn">Visit <span>&rarr;</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <footer>
+       <img src="img/img1.png" alt="" class="logo">
+       <div class="social-icons-container">
+        <a href="https://www.facebook.com" class="social-icon"></a>
+        <a href="https://www.instagram.com" class="social-icon"></a>
+        <a href="https://github.com/Faabrizio" class="social-icon"></a>
+        <a href="https://twitter.com/Vikingsforce" class="social-icon"></a>
+       </div>
+       
+       
+       <spn class="copyright">&copy;2022, name todos los derechos reservados </spn>
+    </footer>
+    
+</body>
+</html>
